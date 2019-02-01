@@ -9,7 +9,7 @@ class App extends Component {
   state = {
     username: "",
     password: ""
-}
+  }
 
 /* Here will want to add a method to log the user out upon clicking 'Logout' */
   _handleLogout = () => {
@@ -18,8 +18,7 @@ class App extends Component {
 
   //Render the protected component
   render() {
-
-    let name = this.props.confirm.username;
+    let name = this.props.confirm ? this.props.confirm.username : 'NULL';
 
     return (
       <div className="App">
