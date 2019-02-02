@@ -2,10 +2,6 @@ import decode from 'jwt-decode';
 
 export default class AuthHelperMethods {
     // Initializing important variables
-    constructor(domain) {
-        //THIS LINE IS ONLY USED WHEN YOU'RE IN PRODUCTION MODE! 
-        this.domain = domain || 'http://localhost:3001' // API server domain
-    }
     login = (username, password) => {
         
         // Get a token from api server using the fetch api
@@ -22,12 +18,11 @@ export default class AuthHelperMethods {
         })
     }
 
-
     loggedIn = () => {
         // Checks if there is a saved token and it's still valid
         const token = this.getToken() // Getting token from localstorage
 
-        //The double exclamation is a way to cast the variable to a boolean, allowing you to 
+        //The double exclamation is a way to cast the variable to a boolean, allowing you to easily check if the token exusts. 
         return !!token && !this.isTokenExpired(token) // handwaiving here
     }
 
