@@ -7,7 +7,7 @@ var bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const exjwt = require('express-jwt');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 var app = express();
 
 // Requiring our models for syncing

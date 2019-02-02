@@ -28,7 +28,6 @@ class Login extends Component {
         e.preventDefault();
 
         /* Here is where all the login logic will go. Upon clicking the login button, we would like to utilize a login method that will send our entered credentials over to the server for verification. Once verified, it should store your token and send you to the protected route. */
-       
     }
 
     componentWillMount() {
