@@ -13,6 +13,7 @@ class App extends Component {
 /* Here will want to add a method to log the user out upon clicking 'Logout' */
   _handleLogout = () => {
     
+    
     this.props.history.replace('/login');
   }
 

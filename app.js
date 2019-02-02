@@ -29,9 +29,6 @@ app.use(cookieParser());
 
 /* This is SUPER important! This is the route that the client will be passing the entered credentials for verification to. If the credentials match, then the server sends back a json response with a valid json web token for the client to use for identification. */
 
-
-
-
 db.sequelize.sync().then(() => {
   app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);

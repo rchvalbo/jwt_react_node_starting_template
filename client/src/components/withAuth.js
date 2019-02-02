@@ -7,7 +7,6 @@ export default function withAuth(AuthComponent) {
     const Auth = new AuthHelperMethods();
 
     return class AuthWrapped extends Component {
-       
         state = {
             confirm: null,
             loaded: false
